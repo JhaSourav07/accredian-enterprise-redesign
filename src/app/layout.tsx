@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; // Using Inter for a clean, modern tech look
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer"; // Import the footer
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
+      {/* We use flex and min-h-screen on the body to push the footer to the bottom */}
+      <body className={`${inter.className} antialiased flex flex-col min-h-screen`}>
         <Navbar />
-        {/* We add a top padding here so content doesn't hide behind the fixed navbar */}
-        <div className="pt-20"> 
+        <div className="pt-20 flex-grow"> 
           {children}
         </div>
+        <Footer /> {/* Add Footer here */}
       </body>
     </html>
   );
