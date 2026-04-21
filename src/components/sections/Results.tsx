@@ -23,7 +23,7 @@ const RESULTS = [
 
 export function Results() {
   return (
-    <section className="py-24 bg-background border-t border-border">
+    <section className="py-24 border-t border-border relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}
@@ -40,7 +40,7 @@ export function Results() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {RESULTS.map((result) => (
             <div key={result.id} className="p-8 rounded-2xl bg-surface border border-border text-center hover:border-accent/50 transition-colors">
-              <div className="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-3xl shadow-sm mb-6 border border-border">
+              <div className="w-16 h-16 mx-auto bg-surface/50 rounded-full flex items-center justify-center text-3xl shadow-sm mb-6 border border-border">
                 {result.icon}
               </div>
               <h3 className="text-xl font-bold text-primary mb-3">{result.title}</h3>

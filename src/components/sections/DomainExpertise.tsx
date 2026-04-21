@@ -14,7 +14,7 @@ const DOMAINS = [
 
 export function DomainExpertise() {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
@@ -32,7 +32,7 @@ export function DomainExpertise() {
           {DOMAINS.map((domain) => (
             <div 
               key={domain.id} 
-              className="flex items-center gap-4 p-6 rounded-xl border border-border bg-white shadow-sm hover:shadow-md hover:border-accent/50 transition-all cursor-pointer group"
+              className="flex items-center gap-4 p-6 rounded-xl border border-border bg-surface/30 shadow-sm hover:shadow-md hover:border-accent/50 transition-all cursor-pointer group"
             >
               <div className="w-12 h-12 rounded-lg bg-surface flex items-center justify-center text-2xl group-hover:bg-accent/10 transition-colors">
                 {domain.icon}

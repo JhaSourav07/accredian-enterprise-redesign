@@ -35,7 +35,7 @@ const TIMELINE_STEPS = [
 
 export function Timeline() {
   return (
-    <section className="py-24 bg-surface border-t border-border overflow-hidden">
+    <section className="py-24 bg-surface/20 border-t border-border overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}
@@ -64,7 +64,7 @@ export function Timeline() {
               >
                 
                 {/* Node (The Circle) */}
-                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-white border border-border flex items-center justify-center text-2xl shadow-lg shadow-accent/5 group-hover:border-accent group-hover:scale-110 transition-all duration-300 relative z-10">
+                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-background border border-border flex items-center justify-center text-2xl shadow-lg shadow-accent/5 group-hover:border-accent group-hover:scale-110 transition-all duration-300 relative z-10">
                   {step.icon}
                 </div>
 

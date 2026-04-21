@@ -9,7 +9,7 @@ const statsData = [
 
 export function Stats() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}

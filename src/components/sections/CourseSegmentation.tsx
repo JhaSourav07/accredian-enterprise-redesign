@@ -20,7 +20,7 @@ export function CourseSegmentation() {
   const [activeTab, setActiveTab] = useState(TABS[0]);
 
   return (
-    <section className="py-24 bg-surface border-t border-border">
+    <section className="py-24 bg-surface/20 border-t border-border relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
@@ -42,7 +42,7 @@ export function CourseSegmentation() {
               className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
                 activeTab === tab 
                   ? 'bg-accent text-white shadow-md' 
-                  : 'bg-white text-muted hover:text-primary hover:bg-surface border border-border'
+                  : 'bg-surface text-muted hover:text-primary hover:bg-surface/80 border border-border'
               }`}
             >
               {tab}
@@ -53,7 +53,7 @@ export function CourseSegmentation() {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {CARDS.map((card) => (
-            <div key={card.id} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-border hover:shadow-md transition-shadow group">
+            <div key={card.id} className="bg-surface/30 rounded-2xl overflow-hidden shadow-sm border border-border hover:shadow-md transition-shadow group">
               <div className="h-40 bg-gradient-to-br from-accent/10 to-surface flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-300">
                 {card.emoji}
               </div>

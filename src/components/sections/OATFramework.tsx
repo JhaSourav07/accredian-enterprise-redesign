@@ -2,7 +2,7 @@ import React from 'react';
 
 export function OATFramework() {
   return (
-    <section className="py-24 bg-surface/50 border-t border-border">
+    <section className="py-24 bg-surface/20 border-t border-border relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Header */}
@@ -19,7 +19,7 @@ export function OATFramework() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 relative max-w-4xl mx-auto">
           
           {/* Concept */}
-          <div className="flex flex-col items-center relative z-10 bg-white p-8 rounded-full w-48 h-48 justify-center border-4 border-accent/20 shadow-lg">
+          <div className="flex flex-col items-center relative z-10 bg-surface p-8 rounded-full w-48 h-48 justify-center border-4 border-accent/20 shadow-lg">
             <span className="text-3xl mb-2">🧠</span>
             <span className="font-bold text-primary text-lg">Concept</span>
             <span className="text-xs text-muted text-center mt-1">Theoretical foundation</span>
@@ -33,7 +33,7 @@ export function OATFramework() {
           </div>
 
           {/* Application */}
-          <div className="flex flex-col items-center relative z-10 bg-white p-8 rounded-full w-48 h-48 justify-center border-4 border-accent shadow-lg scale-110">
+          <div className="flex flex-col items-center relative z-10 bg-surface p-8 rounded-full w-48 h-48 justify-center border-4 border-accent shadow-lg scale-110">
             <span className="text-3xl mb-2">⚙️</span>
             <span className="font-bold text-primary text-lg">Application</span>
             <span className="text-xs text-muted text-center mt-1">Real-world practice</span>
@@ -47,7 +47,7 @@ export function OATFramework() {
           </div>
 
           {/* Tools */}
-          <div className="flex flex-col items-center relative z-10 bg-white p-8 rounded-full w-48 h-48 justify-center border-4 border-accent/20 shadow-lg">
+          <div className="flex flex-col items-center relative z-10 bg-surface p-8 rounded-full w-48 h-48 justify-center border-4 border-accent/20 shadow-lg">
             <span className="text-3xl mb-2">🔨</span>
             <span className="font-bold text-primary text-lg">Tools</span>
             <span className="text-xs text-muted text-center mt-1">Industry tech stack</span>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export function SkillEnhancement() {
   return (
-    <section className="py-24 bg-background border-t border-border">
+    <section className="py-24 border-t border-border relative">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">

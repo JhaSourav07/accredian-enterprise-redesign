@@ -38,7 +38,7 @@ export function FAQ() {
   };
 
   return (
-    <section className="py-24 bg-background border-t border-border/50 relative">
+    <section className="py-24 border-t border-border/50 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
@@ -54,7 +54,7 @@ export function FAQ() {
             <div className="p-6 rounded-2xl bg-surface border border-border w-full">
               <h4 className="text-primary font-medium mb-2">Still have questions?</h4>
               <p className="text-sm text-muted mb-4">Our enterprise team is ready to help you map out your specific needs.</p>
-              <Button variant="outline" className="w-full bg-white hover:bg-surface">Contact Support</Button>
+              <Button variant="outline" className="w-full bg-surface/50 hover:bg-surface">Contact Support</Button>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ export function FAQ() {
                 <div 
                   key={faq.id} 
                   className={`rounded-2xl border transition-colors duration-300 overflow-hidden ${
-                    isOpen ? 'bg-white border-accent shadow-sm' : 'bg-white border-border hover:border-accent/50'
+                    isOpen ? 'bg-surface/40 border-accent/30 shadow-sm' : 'bg-transparent border-border hover:border-border/80'
                   }`}
                 >
                   {/* The Clickable Question Header */}

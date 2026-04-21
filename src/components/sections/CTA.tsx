@@ -3,12 +3,12 @@ import { Button } from '../ui/Button';
 
 export function CTA() {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 relative">
       <div className="max-w-5xl mx-auto px-6">
         <div className="p-8 md:p-12 rounded-2xl border border-accent bg-accent/5 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
           
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-             <div className="w-16 h-16 shrink-0 bg-white rounded-full flex items-center justify-center text-accent text-3xl shadow-sm border border-accent/20">
+             <div className="w-16 h-16 shrink-0 bg-surface rounded-full flex items-center justify-center text-accent text-3xl shadow-sm border border-accent/20">
                🎧
              </div>
              <div>

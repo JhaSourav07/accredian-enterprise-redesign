@@ -2,7 +2,7 @@ import { Button } from '../ui/Button';
 
 export function Hero() {
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden bg-background">
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left Content */}

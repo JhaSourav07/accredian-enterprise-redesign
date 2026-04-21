@@ -27,7 +27,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 relative bg-background border-t border-border/50">
+    <section className="py-24 relative border-t border-border/50">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
@@ -45,7 +45,7 @@ export function Testimonials() {
           {testimonials.map((testimonial) => (
             <div 
               key={testimonial.id} 
-              className="flex flex-col p-8 rounded-2xl bg-white border border-border hover:border-accent/50 shadow-sm transition-colors"
+              className="flex flex-col p-8 rounded-2xl bg-surface/30 border border-border hover:border-accent/50 shadow-sm transition-colors"
             >
               {/* Quote Icon (Using a simple SVG path for a modern look) */}
               <div className="mb-6 text-accent/50">
