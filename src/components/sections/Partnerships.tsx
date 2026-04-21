@@ -49,9 +49,11 @@ export function Partnerships() {
     <section className="py-16 bg-background border-t border-border/50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         
-        <p className="text-center text-sm font-semibold text-accent tracking-widest uppercase mb-10">
-          Our Proven Partnerships
-        </p>
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Our <span className="text-accent">Proven Partnerships</span>
+          </h2>
+        </div>
 
         {/* The Marquee Container */}
         <div 
