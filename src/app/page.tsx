@@ -2,8 +2,9 @@ import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { Stats } from "@/components/sections/Stats";
 import { Partnerships } from "@/components/sections/Partnerships";
-import { Timeline } from "@/components/sections/Timeline"; // Import Timeline
+import { Timeline } from "@/components/sections/Timeline";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { FAQ } from "@/components/sections/FAQ"; // Import FAQ
 import { CTA } from "@/components/sections/CTA";
 
 export default function Home() {
@@ -13,7 +14,8 @@ export default function Home() {
       <Features />
       <Stats />
       <Partnerships />
-      <Timeline /> {/* Add Timeline here */}
+      <Timeline />
+      <FAQ />
       <Testimonials />
       <CTA />
     </main>
