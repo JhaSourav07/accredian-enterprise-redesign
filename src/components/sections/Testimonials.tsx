@@ -33,7 +33,7 @@ export function Testimonials() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Hear from our <span className="text-accent">Enterprise Leaders</span>
+            Testimonials from <span className="text-accent">Our Partners</span>
           </h2>
           <p className="text-muted text-lg">
             See how top-tier organizations are leveraging our programs to build future-ready teams.
@@ -45,7 +45,7 @@ export function Testimonials() {
           {testimonials.map((testimonial) => (
             <div 
               key={testimonial.id} 
-              className="flex flex-col p-8 rounded-2xl bg-surface/30 border border-border hover:bg-surface/50 transition-colors"
+              className="flex flex-col p-8 rounded-2xl bg-white border border-border hover:border-accent/50 shadow-sm transition-colors"
             >
               {/* Quote Icon (Using a simple SVG path for a modern look) */}
               <div className="mb-6 text-accent/50">
