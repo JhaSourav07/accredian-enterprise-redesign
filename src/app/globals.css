@@ -9,9 +9,16 @@
   --color-muted: #A1A1AA;
   --color-accent: #3B82F6;
   --color-accent-hover: #2563EB;
+
+  /* Custom Animations */
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
 }
 
-/* Base HTML/Body Styles */
 html {
   scroll-behavior: smooth;
 }
