@@ -1,10 +1,12 @@
 import { Hero } from "@/components/sections/Hero";
+import { Features } from "@/components/sections/Features";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Hero />
-      {/* We will add Features, Stats, and Testimonials here next! */}
+      <Features />
+      {/* We will add Stats and Testimonials here next! */}
     </main>
   );
 }
