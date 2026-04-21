@@ -56,7 +56,7 @@ export function Testimonials() {
               
               {/* The Quote */}
               <p className="text-primary leading-relaxed flex-grow mb-8 italic">
-                "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
               </p>
               
               {/* User Profile */}
