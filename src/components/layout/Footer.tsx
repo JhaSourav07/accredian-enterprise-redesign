@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function Footer() {
   return (
-    <footer className="bg-surface/10 border-t border-border pt-16 pb-8 mt-auto">
+    <footer className="bg-white border-t border-border pt-16 pb-8 mt-auto">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Top Grid: Links and Brand */}
@@ -10,11 +10,8 @@ export function Footer() {
           
           {/* Brand Column */}
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-6 h-6 rounded-md bg-accent flex items-center justify-center">
-                <div className="w-2 h-2 bg-white rounded-full"></div>
-              </div>
-              <span className="text-xl font-bold tracking-tight text-primary">Accredian</span>
+            <Link href="/" className="flex items-center mb-4">
+              <span className="text-2xl font-bold tracking-tight text-accent">accredian</span>
             </Link>
             <p className="text-muted text-sm leading-relaxed">
               Empowering enterprise teams with industry-leading programs in Data, AI, and Product.
