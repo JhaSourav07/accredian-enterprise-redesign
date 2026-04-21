@@ -51,10 +51,10 @@ export function FAQ() {
             <p className="text-muted mb-8 leading-relaxed">
               Find answers to common questions about our enterprise upskilling programs, deployment, and technical requirements.
             </p>
-            <div className="p-6 rounded-2xl bg-surface/30 border border-border w-full">
+            <div className="p-6 rounded-2xl bg-surface border border-border w-full">
               <h4 className="text-primary font-medium mb-2">Still have questions?</h4>
               <p className="text-sm text-muted mb-4">Our enterprise team is ready to help you map out your specific needs.</p>
-              <Button variant="outline" className="w-full">Contact Support</Button>
+              <Button variant="outline" className="w-full bg-white hover:bg-surface">Contact Support</Button>
             </div>
           </div>
 
@@ -66,9 +66,8 @@ export function FAQ() {
               return (
                 <div 
                   key={faq.id} 
-                  // The card styling changes slightly when it's open (lighter border, subtle background)
                   className={`rounded-2xl border transition-colors duration-300 overflow-hidden ${
-                    isOpen ? 'bg-surface/40 border-accent/30' : 'bg-transparent border-border hover:border-border/80'
+                    isOpen ? 'bg-white border-accent shadow-sm' : 'bg-white border-border hover:border-accent/50'
                   }`}
                 >
                   {/* The Clickable Question Header */}
