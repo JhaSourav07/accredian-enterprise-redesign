@@ -1,51 +1,54 @@
 import React from 'react';
 
-// Hardcoded stats. In a real app, these might come from a database.
 const statsData = [
-  { id: 1, value: "10,000+", label: "Professionals Upskilled" },
-  { id: 2, value: "95%", label: "Completion Rate" },
-  { id: 3, value: "500+", label: "Enterprise Partners" },
-  { id: 4, value: "3x", label: "Average ROI" },
+  { id: 1, value: "10K+", label: "Professionals Upskilled" },
+  { id: 2, value: "10+", label: "Years of Experience" },
+  { id: 3, value: "10+", label: "Enterprise Partners" },
+  { id: 4, value: "10+", label: "Programs Offered" },
 ];
 
 export function Stats() {
   return (
-    // We use a very subtle bg-surface/20 just to separate it slightly from the Features section
-    <section className="py-20 border-t border-border/50 bg-surface/20">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         
-        {/* Top Half: The Numbers */}
-        {/* grid-cols-2 on mobile so they don't get too squished, grid-cols-4 on desktop */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            Our <span className="text-accent">Track Record</span>
+          </h2>
+          <p className="text-muted text-lg">
+            The impact we have delivered so far
+          </p>
+        </div>
+
+        {/* Stats Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center relative before:absolute before:top-1/2 before:left-0 before:w-full before:h-px before:bg-border before:-z-10 hidden md:grid">
           {statsData.map((stat) => (
-            <div key={stat.id} className="flex flex-col space-y-2">
-              <span className="text-4xl md:text-5xl font-extrabold text-primary drop-shadow-sm">
+            <div key={stat.id} className="flex flex-col items-center bg-background px-4">
+              <div className="w-4 h-4 bg-accent rounded-full mb-4 ring-4 ring-surface" />
+              <span className="text-3xl md:text-4xl font-extrabold text-primary mb-2">
                 {stat.value}
               </span>
-              <span className="text-xs md:text-sm font-medium text-muted uppercase tracking-wider">
+              <span className="text-sm font-medium text-muted">
                 {stat.label}
               </span>
             </div>
           ))}
         </div>
-
-        {/* Bottom Half: Trust Badges (Logos) */}
-        <div className="mt-20 pt-10 border-t border-border/30">
-          <p className="text-center text-sm font-medium text-muted mb-8 tracking-widest uppercase">
-            Trusted by industry leaders
-          </p>
-          
-          {/* We use text to simulate company logos for this build.
-            The trick here is 'opacity-50 grayscale hover:opacity-100 hover:grayscale-0'.
-            This makes all logos look uniform and faded, but they pop into full focus when the user interacts!
-          */}
-          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 text-muted transition-all duration-500">
-            <span className="text-2xl font-bold font-serif opacity-50 hover:opacity-100 transition-opacity cursor-default">Acme Corp</span>
-            <span className="text-2xl font-black tracking-tighter opacity-50 hover:opacity-100 transition-opacity cursor-default">GLOBEX</span>
-            <span className="text-2xl font-semibold italic opacity-50 hover:opacity-100 transition-opacity cursor-default">Stark Ind.</span>
-            <span className="text-2xl font-bold uppercase tracking-widest opacity-50 hover:opacity-100 transition-opacity cursor-default">Initech</span>
-            <span className="text-2xl font-medium opacity-50 hover:opacity-100 transition-opacity cursor-default hidden md:block">Soylent</span>
-          </div>
+        
+        {/* Mobile stats (no line) */}
+        <div className="grid grid-cols-2 gap-8 text-center md:hidden">
+          {statsData.map((stat) => (
+            <div key={stat.id} className="flex flex-col items-center">
+              <span className="text-3xl font-extrabold text-primary mb-2">
+                {stat.value}
+              </span>
+              <span className="text-sm font-medium text-muted">
+                {stat.label}
+              </span>
+            </div>
+          ))}
         </div>
 
       </div>
