@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../ui/Button';
+import { Headphones } from 'lucide-react';
 
 export function CTA() {
   return (
@@ -8,8 +9,8 @@ export function CTA() {
         <div className="p-8 md:p-12 rounded-2xl border border-accent bg-accent/5 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
           
           <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-             <div className="w-16 h-16 shrink-0 bg-surface rounded-full flex items-center justify-center text-accent text-3xl shadow-sm border border-accent/20">
-               🎧
+             <div className="w-16 h-16 shrink-0 bg-surface rounded-full flex items-center justify-center text-accent shadow-sm border border-accent/20">
+               <Headphones size={32} />
              </div>
              <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2">

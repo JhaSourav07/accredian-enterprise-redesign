@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { Laptop, Building, Briefcase, TrendingUp } from 'lucide-react';
 
 const TABS = [
   "Program Specific",
@@ -10,10 +11,10 @@ const TABS = [
 ];
 
 const CARDS = [
-  { id: 1, title: 'Program Specific', desc: 'Curriculum tailored for specific programs like AI, Data Science, etc.', emoji: '💻' },
-  { id: 2, title: 'Industry Specific', desc: 'Specialized content for healthcare, finance, retail, and more.', emoji: '🏭' },
-  { id: 3, title: 'Role Specific', desc: 'Focused training for Product Managers, Engineers, Analysts.', emoji: '👩‍💼' },
-  { id: 4, title: 'Level Specific', desc: 'From entry-level basics to advanced executive leadership.', emoji: '📈' },
+  { id: 1, title: 'Program Specific', desc: 'Curriculum tailored for specific programs like AI, Data Science, etc.', emoji: <Laptop size={48} className="text-accent" /> },
+  { id: 2, title: 'Industry Specific', desc: 'Specialized content for healthcare, finance, retail, and more.', emoji: <Building size={48} className="text-accent" /> },
+  { id: 3, title: 'Role Specific', desc: 'Focused training for Product Managers, Engineers, Analysts.', emoji: <Briefcase size={48} className="text-accent" /> },
+  { id: 4, title: 'Level Specific', desc: 'From entry-level basics to advanced executive leadership.', emoji: <TrendingUp size={48} className="text-accent" /> },
 ];
 
 export function CourseSegmentation() {

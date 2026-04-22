@@ -1,35 +1,36 @@
 import React from 'react';
+import { Target, BookOpen, Lightbulb, Rocket, TrendingUp } from 'lucide-react';
 
 const TIMELINE_STEPS = [
   {
     id: '01',
     title: 'Skill Gap Analysis',
     description: 'We assess your team\'s current capabilities to identify strategic areas for growth.',
-    icon: '🎯',
+    icon: <Target size={28} />,
   },
   {
     id: '02',
     title: 'Custom Curriculum',
     description: 'Tailored learning paths designed to align directly with your specific business goals.',
-    icon: '📚',
+    icon: <BookOpen size={28} />,
   },
   {
     id: '03',
     title: 'Expert-Led Training',
     description: 'Interactive sessions led by top-tier practitioners from leading tech giants.',
-    icon: '💡',
+    icon: <Lightbulb size={28} />,
   },
   {
     id: '04',
     title: 'Capstone Projects',
     description: 'Hands-on execution solving your actual enterprise data and AI challenges.',
-    icon: '🚀',
+    icon: <Rocket size={28} />,
   },
   {
     id: '05',
     title: 'Performance Tracking',
     description: 'Continuous monitoring of progress, completion rates, and ROI via our dashboard.',
-    icon: '📈',
+    icon: <TrendingUp size={28} />,
   }
 ];
 

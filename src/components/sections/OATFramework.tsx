@@ -1,4 +1,5 @@
 import React from 'react';
+import { Brain, Settings, Wrench } from 'lucide-react';
 
 export function OATFramework() {
   return (
@@ -20,7 +21,7 @@ export function OATFramework() {
           
           {/* Concept */}
           <div className="flex flex-col items-center relative z-10 bg-surface p-8 rounded-full w-48 h-48 justify-center border-4 border-accent/20 shadow-lg">
-            <span className="text-3xl mb-2">🧠</span>
+            <div className="text-accent mb-2"><Brain size={36} /></div>
             <span className="font-bold text-primary text-lg">Concept</span>
             <span className="text-xs text-muted text-center mt-1">Theoretical foundation</span>
           </div>
@@ -34,7 +35,7 @@ export function OATFramework() {
 
           {/* Application */}
           <div className="flex flex-col items-center relative z-10 bg-surface p-8 rounded-full w-48 h-48 justify-center border-4 border-accent shadow-lg scale-110">
-            <span className="text-3xl mb-2">⚙️</span>
+            <div className="text-accent mb-2"><Settings size={36} /></div>
             <span className="font-bold text-primary text-lg">Application</span>
             <span className="text-xs text-muted text-center mt-1">Real-world practice</span>
           </div>
@@ -48,7 +49,7 @@ export function OATFramework() {
 
           {/* Tools */}
           <div className="flex flex-col items-center relative z-10 bg-surface p-8 rounded-full w-48 h-48 justify-center border-4 border-accent/20 shadow-lg">
-            <span className="text-3xl mb-2">🔨</span>
+            <div className="text-accent mb-2"><Wrench size={36} /></div>
             <span className="font-bold text-primary text-lg">Tools</span>
             <span className="text-xs text-muted text-center mt-1">Industry tech stack</span>
           </div>

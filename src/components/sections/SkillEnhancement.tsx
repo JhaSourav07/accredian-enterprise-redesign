@@ -1,4 +1,5 @@
 import React from 'react';
+import { GraduationCap } from 'lucide-react';
 
 export function SkillEnhancement() {
   return (
@@ -11,8 +12,8 @@ export function SkillEnhancement() {
           <div className="relative w-full aspect-square md:aspect-[4/5] bg-surface rounded-2xl overflow-hidden border border-border shadow-lg flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-tr from-accent/5 to-transparent" />
             <div className="text-center p-8 relative z-10">
-              <div className="w-24 h-24 mx-auto bg-accent/20 rounded-full mb-4 flex items-center justify-center text-4xl">
-                 👩‍💻
+              <div className="w-24 h-24 mx-auto bg-accent/20 rounded-full mb-4 flex items-center justify-center text-accent">
+                 <GraduationCap size={48} />
               </div>
               <p className="text-primary font-medium">Team Training</p>
             </div>

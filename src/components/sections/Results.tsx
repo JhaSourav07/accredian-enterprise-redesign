@@ -1,23 +1,24 @@
 import React from 'react';
+import { Target, BarChart, Rocket } from 'lucide-react';
 
 const RESULTS = [
   {
     id: 1,
-    title: 'Tailored Solutions',
-    description: 'Customized learning paths aligned perfectly with your organization\'s strategic objectives.',
-    icon: '🎯'
+    title: "Increase Productivity",
+    description: "Equip your teams with the frameworks and tools to drastically cut down project turnaround time.",
+    icon: <Target size={32} className="text-accent" />
   },
   {
     id: 2,
-    title: 'Measurable ROI',
-    description: 'Clear metrics and dashboards to track team progress, completion rates, and skill application.',
-    icon: '📊'
+    title: "Data-Driven Decisions",
+    description: "Shift organizational culture to rely on hard data rather than intuition, saving millions.",
+    icon: <BarChart size={32} className="text-accent" />
   },
   {
     id: 3,
-    title: 'Scalable Delivery',
-    description: 'Enterprise-grade platform designed to support thousands of learners simultaneously.',
-    icon: '🚀'
+    title: "Accelerate Innovation",
+    description: "Build internal capabilities to launch AI and tech products faster than the competition.",
+    icon: <Rocket size={32} className="text-accent" />
   }
 ];
 

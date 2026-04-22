@@ -1,15 +1,16 @@
 import React from 'react';
+import { Lightbulb, BarChart, Bot, TrendingUp, Target, Cloud, Lock, Code, Palette } from 'lucide-react';
 
 const DOMAINS = [
-  { id: 'pm', title: 'Product Management', icon: '💡' },
-  { id: 'ds', title: 'Data Science', icon: '📊' },
-  { id: 'ai', title: 'Artificial Intelligence', icon: '🤖' },
-  { id: 'ba', title: 'Business Analytics', icon: '📈' },
-  { id: 'dm', title: 'Digital Marketing', icon: '🎯' },
-  { id: 'cc', title: 'Cloud Computing', icon: '☁️' },
-  { id: 'cs', title: 'Cyber Security', icon: '🔒' },
-  { id: 'se', title: 'Software Engineering', icon: '💻' },
-  { id: 'ux', title: 'UI/UX Design', icon: '🎨' },
+  { id: 'pm', title: 'Product Management', icon: <Lightbulb /> },
+  { id: 'ds', title: 'Data Science', icon: <BarChart /> },
+  { id: 'ai', title: 'Artificial Intelligence', icon: <Bot /> },
+  { id: 'ba', title: 'Business Analytics', icon: <TrendingUp /> },
+  { id: 'dm', title: 'Digital Marketing', icon: <Target /> },
+  { id: 'cc', title: 'Cloud Computing', icon: <Cloud /> },
+  { id: 'cs', title: 'Cyber Security', icon: <Lock /> },
+  { id: 'se', title: 'Software Engineering', icon: <Code /> },
+  { id: 'ux', title: 'UI/UX Design', icon: <Palette /> },
 ];
 
 export function DomainExpertise() {
