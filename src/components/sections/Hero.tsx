@@ -9,7 +9,7 @@ import { useLeadModal } from '@/context/LeadModalContext';
 export function Hero() {
   const { open: openLead } = useLeadModal();
   return (
-    <section className="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden bg-[#030712]">
+    <section className="relative pt-4 pb-24 md:pt-8 md:pb-32 overflow-hidden bg-[#030712]">
       {/* 1. BACKGROUND: Layered Gradients, Glows & Grid */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Very low opacity grid */}
