@@ -5,7 +5,7 @@ import { Timeline } from "@/components/sections/Timeline";
 import { DomainExpertise } from "@/components/sections/DomainExpertise";
 import { CourseSegmentation } from "@/components/sections/CourseSegmentation";
 import { SkillEnhancement } from "@/components/sections/SkillEnhancement";
-import { OATFramework } from "@/components/sections/OATFramework";
+import { OATFramework } from "@/components/sections/CATFramework";
 import { Results } from "@/components/sections/Results";
 import { FAQ } from "@/components/sections/FAQ";
 import { Testimonials } from "@/components/sections/Testimonials";
