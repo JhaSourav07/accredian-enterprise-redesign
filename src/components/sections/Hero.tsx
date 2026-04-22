@@ -19,7 +19,7 @@ export function Hero() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[800px] bg-purple-900/5 rounded-full blur-[150px] mix-blend-screen" />
       </div>
 
-      <div className="relative max-w-[1400px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center z-10">
+      <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center z-10 pt-6 md:pt-0">
         
         {/* LEFT CONTENT (Spans 7 columns) */}
         <div className="lg:col-span-7 flex flex-col items-start text-left animate-in fade-in slide-in-from-bottom-8 duration-1000">
@@ -31,7 +31,7 @@ export function Hero() {
           </div>
 
           {/* Headline - Tighter line height, gradient keywords */}
-          <h1 className="text-5xl sm:text-6xl md:text-[5.5rem] lg:text-[6rem] font-extrabold tracking-tight text-white leading-[1.05] mb-8 drop-shadow-sm">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[5.5rem] xl:text-[6rem] font-extrabold tracking-tight text-white leading-[1.05] mb-6 md:mb-8 drop-shadow-sm">
             Next-Gen <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">Expertise</span> For <br />
             Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">Enterprise</span>
@@ -88,7 +88,7 @@ export function Hero() {
         </div>
 
         {/* RIGHT CONTENT - Visual & Stat Cards (Spans 5 columns) */}
-        <div className="lg:col-span-5 relative w-full h-[600px] lg:h-[800px] mt-16 lg:mt-0 flex items-center justify-center animate-in fade-in slide-in-from-right-8 duration-1000 delay-200">
+        <div className="lg:col-span-5 relative w-full h-[380px] sm:h-[480px] md:h-[560px] lg:h-[800px] mt-8 lg:mt-0 flex items-center justify-center animate-in fade-in slide-in-from-right-8 duration-1000 delay-200">
           
           <style dangerouslySetInnerHTML={{__html: `
             @keyframes drawGraph {
@@ -162,26 +162,26 @@ export function Hero() {
           </div>
 
           {/* Floating Stat Card 1 (Top Left) - Premium Glassmorphism */}
-          <div className="absolute left-2 lg:-left-12 top-32 z-30 animate-[bounce_6s_infinite] hover:scale-105 transition-transform duration-300">
-            <div className="flex flex-col p-6 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_rgba(59,130,246,0.2)] hover:border-blue-500/30 transition-all min-w-[170px] relative overflow-hidden group">
+          <div className="absolute left-2 lg:-left-12 top-16 sm:top-24 lg:top-32 z-30 animate-[bounce_6s_infinite] hover:scale-105 transition-transform duration-300">
+            <div className="flex flex-col p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_rgba(59,130,246,0.2)] hover:border-blue-500/30 transition-all min-w-[130px] sm:min-w-[170px] relative overflow-hidden group">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-transparent opacity-50 group-hover:opacity-100 transition-opacity" />
-              <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-4 text-blue-400 group-hover:scale-110 transition-transform">
-                <Users size={20} strokeWidth={2} />
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-3 text-blue-400 group-hover:scale-110 transition-transform">
+                <Users size={16} strokeWidth={2} />
               </div>
-              <p className="text-4xl font-extrabold text-white mb-1 drop-shadow-sm">1500+</p>
-              <p className="text-sm text-gray-400 font-medium leading-snug">Enterprises<br/>Trust Us</p>
+              <p className="text-2xl sm:text-4xl font-extrabold text-white mb-1 drop-shadow-sm">1500+</p>
+              <p className="text-xs sm:text-sm text-gray-400 font-medium leading-snug">Enterprises<br/>Trust Us</p>
             </div>
           </div>
 
           {/* Floating Stat Card 2 (Top Right) - Premium Glassmorphism */}
-          <div className="absolute right-2 lg:-right-24 xl:-right-32 top-52 z-30 animate-[bounce_7s_infinite] [animation-delay:1s] hover:scale-105 transition-transform duration-300">
-            <div className="flex flex-col p-6 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_rgba(99,102,241,0.2)] hover:border-indigo-500/30 transition-all min-w-[170px] relative overflow-hidden group">
+          <div className="absolute right-2 lg:-right-24 xl:-right-32 top-36 sm:top-44 lg:top-52 z-30 animate-[bounce_7s_infinite] [animation-delay:1s] hover:scale-105 transition-transform duration-300">
+            <div className="flex flex-col p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_32px_rgba(99,102,241,0.2)] hover:border-indigo-500/30 transition-all min-w-[130px] sm:min-w-[170px] relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-full h-1 bg-gradient-to-l from-indigo-500 to-transparent opacity-50 group-hover:opacity-100 transition-opacity" />
-              <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mb-4 text-indigo-400 group-hover:scale-110 transition-transform">
-                <TrendingUp size={20} strokeWidth={2} />
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mb-3 text-indigo-400 group-hover:scale-110 transition-transform">
+                <TrendingUp size={16} strokeWidth={2} />
               </div>
-              <p className="text-4xl font-extrabold text-white mb-1 drop-shadow-sm">95%</p>
-              <p className="text-sm text-gray-400 font-medium leading-snug">Learning Impact<br/>Achieved</p>
+              <p className="text-2xl sm:text-4xl font-extrabold text-white mb-1 drop-shadow-sm">95%</p>
+              <p className="text-xs sm:text-sm text-gray-400 font-medium leading-snug">Learning Impact<br/>Achieved</p>
             </div>
           </div>
 

@@ -108,7 +108,7 @@ export function DomainExpertise() {
       <div className="absolute bottom-[10%] left-[35%] w-[400px] h-[250px] rounded-full bg-violet-600/15 blur-[90px] pointer-events-none mix-blend-screen"
         style={{ animation: 'driftMed 14s ease-in-out infinite 3s' }} />
 
-      <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">

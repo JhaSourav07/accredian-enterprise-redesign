@@ -52,7 +52,7 @@ export function Footer() {
       <div className="absolute top-0 left-1/4 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent pointer-events-none" />
       <div className="absolute top-0 left-[10%] w-[800px] h-[300px] rounded-full bg-indigo-900/10 blur-[120px] pointer-events-none" />
 
-      <div className="max-w-[1400px] mx-auto px-6">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6">
 
         {/* ── Main grid ── */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 py-16 border-b border-white/5">

@@ -165,7 +165,7 @@ export function SkillEnhancement() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_65%_at_50%_50%,transparent_35%,rgba(3,7,18,0.5)_100%)] pointer-events-none" />
       {/* ── END BACKGROUND ── */}
 
-      <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">

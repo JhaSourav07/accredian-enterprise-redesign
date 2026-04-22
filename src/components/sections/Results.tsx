@@ -56,7 +56,7 @@ export function Results() {
         style={{ background: 'rgba(109,40,217,0.18)', animation: 'resDrift2 22s ease-in-out infinite' }} />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_50%,transparent_40%,rgba(3,7,18,0.5)_100%)] pointer-events-none" />
 
-      <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 relative z-10">
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
