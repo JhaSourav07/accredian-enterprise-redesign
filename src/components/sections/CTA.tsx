@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ArrowRight, Calendar, Sparkles, Shield, Zap } from 'lucide-react';
+import { useLeadModal } from '@/context/LeadModalContext';
 
 const TRUST_BADGES = [
   { icon: <Shield size={14} />, label: 'Enterprise-Grade Security' },
@@ -10,6 +11,7 @@ const TRUST_BADGES = [
 ];
 
 export function CTA() {
+  const { open: openLead } = useLeadModal();
   return (
     <section className="py-28 relative overflow-hidden border-t border-white/5">
 
@@ -58,7 +60,9 @@ export function CTA() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-            <button className="group relative flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-[15px] transition-all duration-300 hover:scale-[1.03] overflow-hidden"
+            <button 
+              onClick={openLead}
+              className="group relative flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-[15px] transition-all duration-300 hover:scale-[1.03] overflow-hidden"
               style={{ boxShadow: '0 0 30px -4px rgba(79,70,229,0.6)' }}>
               <span className="relative z-10 flex items-center gap-2">
                 Schedule a Call

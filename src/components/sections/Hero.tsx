@@ -1,9 +1,13 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '../ui/Button';
 import { Sparkles, Users, BarChart2, Award, ArrowRight, PlayCircle, TrendingUp } from 'lucide-react';
+import { useLeadModal } from '@/context/LeadModalContext';
 
 export function Hero() {
+  const { open: openLead } = useLeadModal();
   return (
     <section className="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden bg-[#030712]">
       {/* 1. BACKGROUND: Layered Gradients, Glows & Grid */}
@@ -78,7 +82,9 @@ export function Hero() {
 
           {/* CTAs - Expensive feel */}
           <div className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto">
-            <Button className="w-full sm:w-auto rounded-xl px-10 py-7 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 border-none flex items-center justify-center gap-3 text-white font-semibold text-lg shadow-[0_0_30px_rgba(79,70,229,0.3)] hover:shadow-[0_0_40px_rgba(79,70,229,0.5)] hover:scale-[1.02] transition-all duration-300">
+            <Button 
+              onClick={openLead}
+              className="w-full sm:w-auto rounded-xl px-10 py-7 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 border-none flex items-center justify-center gap-3 text-white font-semibold text-lg shadow-[0_0_30px_rgba(79,70,229,0.3)] hover:shadow-[0_0_40px_rgba(79,70,229,0.5)] hover:scale-[1.02] transition-all duration-300">
               Enquire Now <ArrowRight size={22} />
             </Button>
             <Button variant="outline" className="w-full sm:w-auto rounded-xl px-10 py-7 border-white/20 text-gray-200 bg-white/5 hover:bg-white/10 backdrop-blur-md flex items-center justify-center gap-3 font-semibold text-lg transition-all duration-300 hover:border-white/30">

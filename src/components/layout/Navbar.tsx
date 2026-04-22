@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { useLeadModal } from '@/context/LeadModalContext';
 
 const NAV_LINKS = [
   { name: 'Home',           href: '/' },
@@ -18,6 +19,7 @@ const NAV_LINKS = [
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const { open: openLead } = useLeadModal();
 
   return (
     <header className="fixed top-0 w-full z-50 bg-[#030712]/80 backdrop-blur-xl border-b border-white/10 transition-all duration-300">
@@ -54,12 +56,18 @@ export function Navbar() {
           >
             Log In
           </Button>
-          <Button className="hidden sm:inline-flex bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl px-5 py-2 text-sm shadow-[0_0_15px_rgba(79,70,229,0.3)] hover:shadow-[0_0_25px_rgba(79,70,229,0.5)] border-none transition-all duration-300">
+          <Button
+            onClick={openLead}
+            className="hidden sm:inline-flex bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white rounded-xl px-5 py-2 text-sm shadow-[0_0_15px_rgba(79,70,229,0.3)] hover:shadow-[0_0_25px_rgba(79,70,229,0.5)] border-none transition-all duration-300"
+          >
             Enquire Now
           </Button>
 
           {/* Mobile-only enquire */}
-          <Button className="sm:hidden bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl px-4 py-1.5 text-sm border-none">
+          <Button
+            onClick={openLead}
+            className="sm:hidden bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl px-4 py-1.5 text-sm border-none"
+          >
             Enquire
           </Button>
 
@@ -92,7 +100,7 @@ export function Navbar() {
               <Button variant="outline" className="flex-1 text-gray-300 border-white/10 bg-transparent hover:bg-white/5 rounded-xl py-2.5 text-sm">
                 Log In
               </Button>
-              <Button className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl py-2.5 text-sm border-none">
+              <Button onClick={() => { setOpen(false); openLead(); }} className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl py-2.5 text-sm border-none">
                 Enquire Now
               </Button>
             </div>
